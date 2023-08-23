@@ -11,8 +11,8 @@
 
 import unittest
 
-import qovery
-from qovery.api.service_status_api import ServiceStatusApi  # noqa: E501
+import qovery-ws
+from qovery-ws.api.service_status_api import ServiceStatusApi  # noqa: E501
 
 
 class TestServiceStatusApi(unittest.TestCase):

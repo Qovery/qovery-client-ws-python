@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.unit_dto import UnitDto
+import qovery-ws
+from qovery-ws.model.unit_dto import UnitDto
 
 
 class TestUnitDto(unittest.TestCase):

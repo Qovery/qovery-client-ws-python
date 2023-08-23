@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.int_none_type import IntNoneType
+import qovery-ws
+from qovery-ws.model.int_none_type import IntNoneType
 globals()['int, none_type'] = int, none_type
-from qovery.model.service_log_response_dto import ServiceLogResponseDto
+from qovery-ws.model.service_log_response_dto import ServiceLogResponseDto
 
 
 class TestServiceLogResponseDto(unittest.TestCase):

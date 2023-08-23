@@ -12,10 +12,10 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.metric_dto import MetricDto
+import qovery-ws
+from qovery-ws.model.metric_dto import MetricDto
 globals()['MetricDto'] = MetricDto
-from qovery.model.service_metrics_dto import ServiceMetricsDto
+from qovery-ws.model.service_metrics_dto import ServiceMetricsDto
 
 
 class TestServiceMetricsDto(unittest.TestCase):

@@ -1,4 +1,4 @@
-# qovery.ServiceStatusApi
+# qovery-ws.ServiceStatusApi
 
 All URIs are relative to *http://localhost*
 
@@ -17,19 +17,19 @@ Method | HTTP request | Description
 
 ```python
 import time
-import qovery
-from qovery.api import service_status_api
-from qovery.model.service_status_dto import ServiceStatusDto
+import qovery-ws
+from qovery-ws.api import service_status_api
+from qovery-ws.model.service_status_dto import ServiceStatusDto
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = qovery.Configuration(
+configuration = qovery-ws.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with qovery.ApiClient() as api_client:
+with qovery-ws.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = service_status_api.ServiceStatusApi(api_client)
     organization = "organization_example" # str | 
@@ -41,7 +41,7 @@ with qovery.ApiClient() as api_client:
     try:
         api_response = api_instance.handle_service_status_request(organization, cluster, project, environment)
         pprint(api_response)
-    except qovery.ApiException as e:
+    except qovery-ws.ApiException as e:
         print("Exception when calling ServiceStatusApi->handle_service_status_request: %s\n" % e)
 ```
 

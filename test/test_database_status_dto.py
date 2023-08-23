@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.pod_status_dto import PodStatusDto
-from qovery.model.service_state_dto import ServiceStateDto
+import qovery-ws
+from qovery-ws.model.pod_status_dto import PodStatusDto
+from qovery-ws.model.service_state_dto import ServiceStateDto
 globals()['PodStatusDto'] = PodStatusDto
 globals()['ServiceStateDto'] = ServiceStateDto
-from qovery.model.database_status_dto import DatabaseStatusDto
+from qovery-ws.model.database_status_dto import DatabaseStatusDto
 
 
 class TestDatabaseStatusDto(unittest.TestCase):

@@ -11,8 +11,8 @@
 
 import unittest
 
-import qovery
-from qovery.api.service_metrics_api import ServiceMetricsApi  # noqa: E501
+import qovery-ws
+from qovery-ws.api.service_metrics_api import ServiceMetricsApi  # noqa: E501
 
 
 class TestServiceMetricsApi(unittest.TestCase):

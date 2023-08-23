@@ -1,4 +1,4 @@
-# qovery.ServiceMetricsApi
+# qovery-ws.ServiceMetricsApi
 
 All URIs are relative to *http://localhost*
 
@@ -17,20 +17,20 @@ Method | HTTP request | Description
 
 ```python
 import time
-import qovery
-from qovery.api import service_metrics_api
-from qovery.model.service_metrics_dto import ServiceMetricsDto
-from qovery.model.service_type import ServiceType
+import qovery-ws
+from qovery-ws.api import service_metrics_api
+from qovery-ws.model.service_type import ServiceType
+from qovery-ws.model.service_metrics_dto import ServiceMetricsDto
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = qovery.Configuration(
+configuration = qovery-ws.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with qovery.ApiClient() as api_client:
+with qovery-ws.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = service_metrics_api.ServiceMetricsApi(api_client)
     organization = "organization_example" # str | 
@@ -44,7 +44,7 @@ with qovery.ApiClient() as api_client:
     try:
         api_response = api_instance.handle_metrics_request(organization, cluster, project, environment, service, service_type)
         pprint(api_response)
-    except qovery.ApiException as e:
+    except qovery-ws.ApiException as e:
         print("Exception when calling ServiceMetricsApi->handle_metrics_request: %s\n" % e)
 ```
 

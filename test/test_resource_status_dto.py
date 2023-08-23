@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.resource_status_dto import ResourceStatusDto
+import qovery-ws
+from qovery-ws.model.resource_status_dto import ResourceStatusDto
 
 
 class TestResourceStatusDto(unittest.TestCase):

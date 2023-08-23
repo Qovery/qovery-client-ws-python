@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.container_state_terminated_dto import ContainerStateTerminatedDto
-from qovery.model.int_none_type import IntNoneType
+import qovery-ws
+from qovery-ws.model.container_state_terminated_dto import ContainerStateTerminatedDto
+from qovery-ws.model.int_none_type import IntNoneType
 globals()['ContainerStateTerminatedDto'] = ContainerStateTerminatedDto
 globals()['int, none_type'] = int, none_type
-from qovery.model.container_status_dto_last_terminated_state import ContainerStatusDtoLastTerminatedState
+from qovery-ws.model.container_status_dto_last_terminated_state import ContainerStatusDtoLastTerminatedState
 
 
 class TestContainerStatusDtoLastTerminatedState(unittest.TestCase):

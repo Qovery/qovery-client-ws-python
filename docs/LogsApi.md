@@ -1,4 +1,4 @@
-# qovery.LogsApi
+# qovery-ws.LogsApi
 
 All URIs are relative to *http://localhost*
 
@@ -18,19 +18,19 @@ Method | HTTP request | Description
 
 ```python
 import time
-import qovery
-from qovery.api import logs_api
-from qovery.model.service_infra_log_response_dto import ServiceInfraLogResponseDto
+import qovery-ws
+from qovery-ws.api import logs_api
+from qovery-ws.model.service_infra_log_response_dto import ServiceInfraLogResponseDto
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = qovery.Configuration(
+configuration = qovery-ws.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with qovery.ApiClient() as api_client:
+with qovery-ws.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = logs_api.LogsApi(api_client)
     organization = "organization_example" # str | 
@@ -44,7 +44,7 @@ with qovery.ApiClient() as api_client:
     try:
         api_response = api_instance.handle_infra_logs_request(organization, cluster, project, environment, service, infra_component_type)
         pprint(api_response)
-    except qovery.ApiException as e:
+    except qovery-ws.ApiException as e:
         print("Exception when calling LogsApi->handle_infra_logs_request: %s\n" % e)
 ```
 
@@ -92,19 +92,19 @@ No authorization required
 
 ```python
 import time
-import qovery
-from qovery.api import logs_api
-from qovery.model.service_log_response_dto import ServiceLogResponseDto
+import qovery-ws
+from qovery-ws.api import logs_api
+from qovery-ws.model.service_log_response_dto import ServiceLogResponseDto
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = qovery.Configuration(
+configuration = qovery-ws.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with qovery.ApiClient() as api_client:
+with qovery-ws.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = logs_api.LogsApi(api_client)
     organization = "organization_example" # str | 
@@ -117,7 +117,7 @@ with qovery.ApiClient() as api_client:
     try:
         api_response = api_instance.handle_service_logs_request(organization, cluster, project, environment, service)
         pprint(api_response)
-    except qovery.ApiException as e:
+    except qovery-ws.ApiException as e:
         print("Exception when calling LogsApi->handle_service_logs_request: %s\n" % e)
 ```
 

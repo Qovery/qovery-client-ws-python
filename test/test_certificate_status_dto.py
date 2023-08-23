@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.int_none_type import IntNoneType
-from qovery.model.service_state_dto import ServiceStateDto
+import qovery-ws
+from qovery-ws.model.int_none_type import IntNoneType
+from qovery-ws.model.service_state_dto import ServiceStateDto
 globals()['ServiceStateDto'] = ServiceStateDto
 globals()['int, none_type'] = int, none_type
-from qovery.model.certificate_status_dto import CertificateStatusDto
+from qovery-ws.model.certificate_status_dto import CertificateStatusDto
 
 
 class TestCertificateStatusDto(unittest.TestCase):

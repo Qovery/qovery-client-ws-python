@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.service_type import ServiceType
+import qovery-ws
+from qovery-ws.model.service_type import ServiceType
 
 
 class TestServiceType(unittest.TestCase):

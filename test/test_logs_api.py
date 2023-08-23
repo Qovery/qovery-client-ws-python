@@ -11,8 +11,8 @@
 
 import unittest
 
-import qovery
-from qovery.api.logs_api import LogsApi  # noqa: E501
+import qovery-ws
+from qovery-ws.api.logs_api import LogsApi  # noqa: E501
 
 
 class TestLogsApi(unittest.TestCase):

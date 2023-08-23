@@ -11,8 +11,8 @@
 
 import unittest
 
-import qovery
-from qovery.api.deployment_api import DeploymentApi  # noqa: E501
+import qovery-ws
+from qovery-ws.api.deployment_api import DeploymentApi  # noqa: E501
 
 
 class TestDeploymentApi(unittest.TestCase):

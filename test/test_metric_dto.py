@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.resource_status_dto import ResourceStatusDto
-from qovery.model.unit_dto import UnitDto
+import qovery-ws
+from qovery-ws.model.resource_status_dto import ResourceStatusDto
+from qovery-ws.model.unit_dto import UnitDto
 globals()['ResourceStatusDto'] = ResourceStatusDto
 globals()['UnitDto'] = UnitDto
-from qovery.model.metric_dto import MetricDto
+from qovery-ws.model.metric_dto import MetricDto
 
 
 class TestMetricDto(unittest.TestCase):

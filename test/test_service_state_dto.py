@@ -12,8 +12,8 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.service_state_dto import ServiceStateDto
+import qovery-ws
+from qovery-ws.model.service_state_dto import ServiceStateDto
 
 
 class TestServiceStateDto(unittest.TestCase):

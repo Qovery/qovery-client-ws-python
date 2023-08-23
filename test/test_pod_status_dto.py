@@ -12,14 +12,14 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.container_status_dto import ContainerStatusDto
-from qovery.model.int_none_type import IntNoneType
-from qovery.model.service_state_dto import ServiceStateDto
+import qovery-ws
+from qovery-ws.model.container_status_dto import ContainerStatusDto
+from qovery-ws.model.int_none_type import IntNoneType
+from qovery-ws.model.service_state_dto import ServiceStateDto
 globals()['ContainerStatusDto'] = ContainerStatusDto
 globals()['ServiceStateDto'] = ServiceStateDto
 globals()['int, none_type'] = int, none_type
-from qovery.model.pod_status_dto import PodStatusDto
+from qovery-ws.model.pod_status_dto import PodStatusDto
 
 
 class TestPodStatusDto(unittest.TestCase):

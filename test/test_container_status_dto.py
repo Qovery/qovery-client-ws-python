@@ -12,12 +12,12 @@
 import sys
 import unittest
 
-import qovery
-from qovery.model.container_status_dto_current_state import ContainerStatusDtoCurrentState
-from qovery.model.container_status_dto_last_terminated_state import ContainerStatusDtoLastTerminatedState
+import qovery-ws
+from qovery-ws.model.container_status_dto_current_state import ContainerStatusDtoCurrentState
+from qovery-ws.model.container_status_dto_last_terminated_state import ContainerStatusDtoLastTerminatedState
 globals()['ContainerStatusDtoCurrentState'] = ContainerStatusDtoCurrentState
 globals()['ContainerStatusDtoLastTerminatedState'] = ContainerStatusDtoLastTerminatedState
-from qovery.model.container_status_dto import ContainerStatusDto
+from qovery-ws.model.container_status_dto import ContainerStatusDto
 
 
 class TestContainerStatusDto(unittest.TestCase):
