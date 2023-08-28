@@ -60,6 +60,7 @@ class DeploymentApi(object):
                     'version',
                 ],
                 'nullable': [
+                    'cluster',
                     'version',
                 ],
                 'enum': [
@@ -76,7 +77,7 @@ class DeploymentApi(object):
                     'organization':
                         (str,),
                     'cluster':
-                        (str,),
+                        (str, none_type,),
                     'project':
                         (str,),
                     'environment':
@@ -134,6 +135,7 @@ class DeploymentApi(object):
                     'version',
                 ],
                 'nullable': [
+                    'cluster',
                     'version',
                 ],
                 'enum': [
@@ -150,7 +152,7 @@ class DeploymentApi(object):
                     'organization':
                         (str,),
                     'cluster':
-                        (str,),
+                        (str, none_type,),
                     'project':
                         (str,),
                     'environment':
@@ -203,7 +205,7 @@ class DeploymentApi(object):
 
         Args:
             organization (str):
-            cluster (str):
+            cluster (str, none_type):
             project (str):
             environment (str):
             version (str, none_type):
@@ -301,7 +303,7 @@ class DeploymentApi(object):
 
         Args:
             organization (str):
-            cluster (str):
+            cluster (str, none_type):
             project (str):
             environment (str):
             version (str, none_type):

@@ -33,7 +33,7 @@ with qovery-ws.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = deployment_api.DeploymentApi(api_client)
     organization = "organization_example" # str | 
-    cluster = "cluster_example" # str | 
+    cluster = "cluster_example" # str, none_type | 
     project = "project_example" # str | 
     environment = "environment_example" # str | 
     version = "version_example" # str, none_type | 
@@ -52,7 +52,7 @@ with qovery-ws.ApiClient() as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **str**|  |
- **cluster** | **str**|  |
+ **cluster** | **str, none_type**|  |
  **project** | **str**|  |
  **environment** | **str**|  |
  **version** | **str, none_type**|  |
@@ -104,7 +104,7 @@ with qovery-ws.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = deployment_api.DeploymentApi(api_client)
     organization = "organization_example" # str | 
-    cluster = "cluster_example" # str | 
+    cluster = "cluster_example" # str, none_type | 
     project = "project_example" # str | 
     environment = "environment_example" # str | 
     version = "version_example" # str, none_type | 
@@ -123,7 +123,7 @@ with qovery-ws.ApiClient() as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization** | **str**|  |
- **cluster** | **str**|  |
+ **cluster** | **str, none_type**|  |
  **project** | **str**|  |
  **environment** | **str**|  |
  **version** | **str, none_type**|  |
