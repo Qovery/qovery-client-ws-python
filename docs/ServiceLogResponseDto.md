@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**created_at** | **int, none_type** | Unix timestamp with millisecond precision | 
+**created_at** | **int** |  | 
 **message** | **str** |  | 
 **pod_name** | **str** |  | 
 **version** | **str** |  | 
