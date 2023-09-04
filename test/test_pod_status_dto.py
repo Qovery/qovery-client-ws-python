@@ -14,11 +14,9 @@ import unittest
 
 import qovery-ws
 from qovery-ws.model.container_status_dto import ContainerStatusDto
-from qovery-ws.model.int_none_type import IntNoneType
 from qovery-ws.model.service_state_dto import ServiceStateDto
 globals()['ContainerStatusDto'] = ContainerStatusDto
 globals()['ServiceStateDto'] = ServiceStateDto
-globals()['int, none_type'] = int, none_type
 from qovery-ws.model.pod_status_dto import PodStatusDto
 
 

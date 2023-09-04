@@ -59,9 +59,6 @@ class ServiceLogResponseDto(ModelNormal):
     }
 
     validations = {
-        ('created_at',): {
-            'inclusive_minimum': 0,
-        },
     }
 
     @cached_property
@@ -114,7 +111,7 @@ class ServiceLogResponseDto(ModelNormal):
         """ServiceLogResponseDto - a model defined in OpenAPI
 
         Args:
-            created_at (int):
+            created_at (int): Unix timestamp with millisecond precision
             message (str):
             pod_name (str):
             version (str):
@@ -209,7 +206,7 @@ class ServiceLogResponseDto(ModelNormal):
         """ServiceLogResponseDto - a model defined in OpenAPI
 
         Args:
-            created_at (int):
+            created_at (int): Unix timestamp with millisecond precision
             message (str):
             pod_name (str):
             version (str):

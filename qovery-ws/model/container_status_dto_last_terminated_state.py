@@ -32,9 +32,7 @@ from qovery-ws.exceptions import ApiAttributeError
 
 def lazy_import():
     from qovery-ws.model.container_state_terminated_dto import ContainerStateTerminatedDto
-    from qovery-ws.model.int_none_type import IntNoneType
     globals()['ContainerStateTerminatedDto'] = ContainerStateTerminatedDto
-    globals()['int, none_type'] = int, none_type
 
 
 class ContainerStatusDtoLastTerminatedState(ModelComposed):

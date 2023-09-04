@@ -31,10 +31,8 @@ from qovery-ws.exceptions import ApiAttributeError
 
 
 def lazy_import():
-    from qovery-ws.model.int_none_type import IntNoneType
     from qovery-ws.model.service_state_dto import ServiceStateDto
     globals()['ServiceStateDto'] = ServiceStateDto
-    globals()['int, none_type'] = int, none_type
 
 
 class CertificateStatusDto(ModelNormal):
