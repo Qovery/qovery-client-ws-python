@@ -13,8 +13,6 @@ import sys
 import unittest
 
 import qovery-ws
-from qovery-ws.model.int_none_type import IntNoneType
-globals()['int, none_type'] = int, none_type
 from qovery-ws.model.service_log_response_dto import ServiceLogResponseDto
 
 
