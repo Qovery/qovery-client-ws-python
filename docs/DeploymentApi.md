@@ -75,7 +75,7 @@ No authorization required
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Stream of deployment logs. Type API is at https://api-doc.qovery.com/#tag/Environment-Logs/operation/listEnvironmentLogs |  -  |
+**200** | Stream of deployment logs. Type api is at https://api-doc.qovery.com/#tag/Environment-Logs/operation/listEnvironmentLogs |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -146,7 +146,7 @@ No authorization required
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Stream of deployment status. Type API is at https://api-doc.qovery.com/#tag/Environment-Main-Calls/operation/getEnvironmentStatusesWithStages |  -  |
+**200** | Stream of deployment status. Type Api is at https://api-doc.qovery.com/#tag/Environment-Main-Calls/operation/getEnvironmentStatusesWithStages |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
