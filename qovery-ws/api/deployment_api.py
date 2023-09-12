@@ -136,6 +136,7 @@ class DeploymentApi(object):
                 ],
                 'nullable': [
                     'cluster',
+                    'environment',
                     'version',
                 ],
                 'enum': [
@@ -156,7 +157,7 @@ class DeploymentApi(object):
                     'project':
                         (str,),
                     'environment':
-                        (str,),
+                        (str, none_type,),
                     'version':
                         (str, none_type,),
                 },
@@ -305,7 +306,7 @@ class DeploymentApi(object):
             organization (str):
             cluster (str, none_type):
             project (str):
-            environment (str):
+            environment (str, none_type):
             version (str, none_type):
 
         Keyword Args:

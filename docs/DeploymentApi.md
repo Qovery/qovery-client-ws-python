@@ -106,7 +106,7 @@ with qovery-ws.ApiClient() as api_client:
     organization = "organization_example" # str | 
     cluster = "cluster_example" # str, none_type | 
     project = "project_example" # str | 
-    environment = "environment_example" # str | 
+    environment = "environment_example" # str, none_type | 
     version = "version_example" # str, none_type | 
 
     # example passing only required values which don't have defaults set
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
  **organization** | **str**|  |
  **cluster** | **str, none_type**|  |
  **project** | **str**|  |
- **environment** | **str**|  |
+ **environment** | **str, none_type**|  |
  **version** | **str, none_type**|  |
 
 ### Return type
