@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **applications** | [**[ApplicationStatusDto]**](ApplicationStatusDto.md) |  | 
 **containers** | [**[ApplicationStatusDto]**](ApplicationStatusDto.md) |  | 
 **databases** | [**[DatabaseStatusDto]**](DatabaseStatusDto.md) |  | 
+**helms** | [**[ApplicationStatusDto]**](ApplicationStatusDto.md) |  | 
 **id** | **str** |  | 
 **jobs** | [**[ApplicationStatusDto]**](ApplicationStatusDto.md) |  | 
 **project_id** | **str** |  | 

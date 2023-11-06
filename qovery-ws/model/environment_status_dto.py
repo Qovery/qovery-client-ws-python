@@ -95,6 +95,7 @@ class EnvironmentStatusDto(ModelNormal):
             'applications': ([ApplicationStatusDto],),  # noqa: E501
             'containers': ([ApplicationStatusDto],),  # noqa: E501
             'databases': ([DatabaseStatusDto],),  # noqa: E501
+            'helms': ([ApplicationStatusDto],),  # noqa: E501
             'id': (str,),  # noqa: E501
             'jobs': ([ApplicationStatusDto],),  # noqa: E501
             'project_id': (str,),  # noqa: E501
@@ -110,6 +111,7 @@ class EnvironmentStatusDto(ModelNormal):
         'applications': 'applications',  # noqa: E501
         'containers': 'containers',  # noqa: E501
         'databases': 'databases',  # noqa: E501
+        'helms': 'helms',  # noqa: E501
         'id': 'id',  # noqa: E501
         'jobs': 'jobs',  # noqa: E501
         'project_id': 'project_id',  # noqa: E501
@@ -123,13 +125,14 @@ class EnvironmentStatusDto(ModelNormal):
 
     @classmethod
     @convert_js_args_to_python_args
-    def _from_openapi_data(cls, applications, containers, databases, id, jobs, project_id, state, *args, **kwargs):  # noqa: E501
+    def _from_openapi_data(cls, applications, containers, databases, helms, id, jobs, project_id, state, *args, **kwargs):  # noqa: E501
         """EnvironmentStatusDto - a model defined in OpenAPI
 
         Args:
             applications ([ApplicationStatusDto]):
             containers ([ApplicationStatusDto]):
             databases ([DatabaseStatusDto]):
+            helms ([ApplicationStatusDto]):
             id (str):
             jobs ([ApplicationStatusDto]):
             project_id (str):
@@ -200,6 +203,7 @@ class EnvironmentStatusDto(ModelNormal):
         self.applications = applications
         self.containers = containers
         self.databases = databases
+        self.helms = helms
         self.id = id
         self.jobs = jobs
         self.project_id = project_id
@@ -224,13 +228,14 @@ class EnvironmentStatusDto(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, applications, containers, databases, id, jobs, project_id, state, *args, **kwargs):  # noqa: E501
+    def __init__(self, applications, containers, databases, helms, id, jobs, project_id, state, *args, **kwargs):  # noqa: E501
         """EnvironmentStatusDto - a model defined in OpenAPI
 
         Args:
             applications ([ApplicationStatusDto]):
             containers ([ApplicationStatusDto]):
             databases ([DatabaseStatusDto]):
+            helms ([ApplicationStatusDto]):
             id (str):
             jobs ([ApplicationStatusDto]):
             project_id (str):
@@ -299,6 +304,7 @@ class EnvironmentStatusDto(ModelNormal):
         self.applications = applications
         self.containers = containers
         self.databases = databases
+        self.helms = helms
         self.id = id
         self.jobs = jobs
         self.project_id = project_id
