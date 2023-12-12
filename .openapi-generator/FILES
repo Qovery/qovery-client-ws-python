@@ -13,6 +13,7 @@ docs/ContainerStatusDtoLastTerminatedState.md
 docs/DatabaseStatusDto.md
 docs/DeploymentApi.md
 docs/EnvironmentStatusDto.md
+docs/InfraStatusApi.md
 docs/LogsApi.md
 docs/MetricDto.md
 docs/PodStatusDto.md
@@ -30,6 +31,7 @@ git_push.sh
 qovery-ws/__init__.py
 qovery-ws/api/__init__.py
 qovery-ws/api/deployment_api.py
+qovery-ws/api/infra_status_api.py
 qovery-ws/api/logs_api.py
 qovery-ws/api/service_metrics_api.py
 qovery-ws/api/service_status_api.py
@@ -75,6 +77,7 @@ test/test_container_status_dto_last_terminated_state.py
 test/test_database_status_dto.py
 test/test_deployment_api.py
 test/test_environment_status_dto.py
+test/test_infra_status_api.py
 test/test_logs_api.py
 test/test_metric_dto.py
 test/test_pod_status_dto.py

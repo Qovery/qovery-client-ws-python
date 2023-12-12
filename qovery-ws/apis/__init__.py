@@ -15,6 +15,7 @@
 
 # Import APIs into API package:
 from qovery-ws.api.deployment_api import DeploymentApi
+from qovery-ws.api.infra_status_api import InfraStatusApi
 from qovery-ws.api.logs_api import LogsApi
 from qovery-ws.api.service_metrics_api import ServiceMetricsApi
 from qovery-ws.api.service_status_api import ServiceStatusApi
