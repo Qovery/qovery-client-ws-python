@@ -11,6 +11,8 @@
 
 from qovery-ws.model.application_status_dto import ApplicationStatusDto
 from qovery-ws.model.certificate_status_dto import CertificateStatusDto
+from qovery-ws.model.cluster_node_dto import ClusterNodeDto
+from qovery-ws.model.cluster_status_dto import ClusterStatusDto
 from qovery-ws.model.container_state_dto import ContainerStateDto
 from qovery-ws.model.container_state_terminated_dto import ContainerStateTerminatedDto
 from qovery-ws.model.container_status_dto import ContainerStatusDto
@@ -19,6 +21,11 @@ from qovery-ws.model.container_status_dto_last_terminated_state import Container
 from qovery-ws.model.database_status_dto import DatabaseStatusDto
 from qovery-ws.model.environment_status_dto import EnvironmentStatusDto
 from qovery-ws.model.metric_dto import MetricDto
+from qovery-ws.model.node_address_dto import NodeAddressDto
+from qovery-ws.model.node_condition_dto import NodeConditionDto
+from qovery-ws.model.node_pod_info_dto import NodePodInfoDto
+from qovery-ws.model.node_resource_dto import NodeResourceDto
+from qovery-ws.model.node_taint_dto import NodeTaintDto
 from qovery-ws.model.pod_status_dto import PodStatusDto
 from qovery-ws.model.resource_status_dto import ResourceStatusDto
 from qovery-ws.model.service_infra_log_response_dto import ServiceInfraLogResponseDto

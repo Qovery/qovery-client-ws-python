@@ -49,7 +49,8 @@ Please follow the [installation procedure](#installation--usage) and then run th
 import time
 import qovery-ws
 from pprint import pprint
-from qovery-ws.api import deployment_api
+from qovery-ws.api import cluster_status_api
+from qovery-ws.model.cluster_status_dto import ClusterStatusDto
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
 configuration = qovery-ws.Configuration(
@@ -61,18 +62,15 @@ configuration = qovery-ws.Configuration(
 # Enter a context with an instance of the API client
 with qovery-ws.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = deployment_api.DeploymentApi(api_client)
+    api_instance = cluster_status_api.ClusterStatusApi(api_client)
     organization = "organization_example" # str | 
-    cluster = "cluster_example" # str, none_type | 
-    project = "project_example" # str | 
-    environment = "environment_example" # str | 
-    version = "version_example" # str, none_type | 
+    cluster = "cluster_example" # str | 
 
     try:
-        api_response = api_instance.handle_deployment_logs_request(organization, cluster, project, environment, version)
+        api_response = api_instance.handle_cluster_status_request(organization, cluster)
         pprint(api_response)
     except qovery-ws.ApiException as e:
-        print("Exception when calling DeploymentApi->handle_deployment_logs_request: %s\n" % e)
+        print("Exception when calling ClusterStatusApi->handle_cluster_status_request: %s\n" % e)
 ```
 
 ## Documentation for API Endpoints
@@ -81,9 +79,9 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*ClusterStatusApi* | [**handle_cluster_status_request**](docs/ClusterStatusApi.md#handle_cluster_status_request) | **GET** /cluster/status | 
 *DeploymentApi* | [**handle_deployment_logs_request**](docs/DeploymentApi.md#handle_deployment_logs_request) | **GET** /deployment/logs | 
 *DeploymentApi* | [**handle_deployment_status_request**](docs/DeploymentApi.md#handle_deployment_status_request) | **GET** /deployment/status | 
-*InfraStatusApi* | [**handle_infra_status_request**](docs/InfraStatusApi.md#handle_infra_status_request) | **GET** /infra/status | 
 *LogsApi* | [**handle_infra_logs_request**](docs/LogsApi.md#handle_infra_logs_request) | **GET** /infra/logs | 
 *LogsApi* | [**handle_service_logs_request**](docs/LogsApi.md#handle_service_logs_request) | **GET** /service/logs | 
 *ServiceMetricsApi* | [**handle_metrics_request**](docs/ServiceMetricsApi.md#handle_metrics_request) | **GET** /service/metrics | 
@@ -94,6 +92,8 @@ Class | Method | HTTP request | Description
 
  - [ApplicationStatusDto](docs/ApplicationStatusDto.md)
  - [CertificateStatusDto](docs/CertificateStatusDto.md)
+ - [ClusterNodeDto](docs/ClusterNodeDto.md)
+ - [ClusterStatusDto](docs/ClusterStatusDto.md)
  - [ContainerStateDto](docs/ContainerStateDto.md)
  - [ContainerStateTerminatedDto](docs/ContainerStateTerminatedDto.md)
  - [ContainerStatusDto](docs/ContainerStatusDto.md)
@@ -102,6 +102,11 @@ Class | Method | HTTP request | Description
  - [DatabaseStatusDto](docs/DatabaseStatusDto.md)
  - [EnvironmentStatusDto](docs/EnvironmentStatusDto.md)
  - [MetricDto](docs/MetricDto.md)
+ - [NodeAddressDto](docs/NodeAddressDto.md)
+ - [NodeConditionDto](docs/NodeConditionDto.md)
+ - [NodePodInfoDto](docs/NodePodInfoDto.md)
+ - [NodeResourceDto](docs/NodeResourceDto.md)
+ - [NodeTaintDto](docs/NodeTaintDto.md)
  - [PodStatusDto](docs/PodStatusDto.md)
  - [ResourceStatusDto](docs/ResourceStatusDto.md)
  - [ServiceInfraLogResponseDto](docs/ServiceInfraLogResponseDto.md)

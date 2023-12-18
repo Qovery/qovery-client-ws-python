@@ -802,11 +802,11 @@ class Endpoint(object):
         """ This method is invoked when endpoints are called
         Example:
 
-        api_instance = DeploymentApi()
-        api_instance.handle_deployment_logs_request  # this is an instance of the class Endpoint
-        api_instance.handle_deployment_logs_request()  # this invokes api_instance.handle_deployment_logs_request.__call__()
+        api_instance = ClusterStatusApi()
+        api_instance.handle_cluster_status_request  # this is an instance of the class Endpoint
+        api_instance.handle_cluster_status_request()  # this invokes api_instance.handle_cluster_status_request.__call__()
         which then invokes the callable functions stored in that endpoint at
-        api_instance.handle_deployment_logs_request.callable or self.callable in this class
+        api_instance.handle_cluster_status_request.callable or self.callable in this class
 
         """
         return self.callable(self, *args, **kwargs)

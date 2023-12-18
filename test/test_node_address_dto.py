@@ -9,25 +9,26 @@
 """
 
 
+import sys
 import unittest
 
 import qovery-ws
-from qovery-ws.api.infra_status_api import InfraStatusApi  # noqa: E501
+from qovery-ws.model.node_address_dto import NodeAddressDto
 
 
-class TestInfraStatusApi(unittest.TestCase):
-    """InfraStatusApi unit test stubs"""
+class TestNodeAddressDto(unittest.TestCase):
+    """NodeAddressDto unit test stubs"""
 
     def setUp(self):
-        self.api = InfraStatusApi()  # noqa: E501
+        pass
 
     def tearDown(self):
         pass
 
-    def test_handle_infra_status_request(self):
-        """Test case for handle_infra_status_request
-
-        """
+    def testNodeAddressDto(self):
+        """Test NodeAddressDto"""
+        # FIXME: construct object with mandatory attributes with example values
+        # model = NodeAddressDto()  # noqa: E501
         pass
 
 
