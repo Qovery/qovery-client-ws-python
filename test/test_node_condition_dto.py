@@ -13,8 +13,6 @@ import sys
 import unittest
 
 import qovery-ws
-from qovery-ws.model.prost_types_timestamp import ProstTypesTimestamp
-globals()['ProstTypesTimestamp'] = ProstTypesTimestamp
 from qovery-ws.model.node_condition_dto import NodeConditionDto
 
 
