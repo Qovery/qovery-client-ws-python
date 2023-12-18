@@ -4,6 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**images_version** | **{str: (str,)}** |  | 
 **name** | **str** |  | 
 **namespace** | **str** |  | 
 **cpu_milli_limit** | **int, none_type** |  | [optional] 

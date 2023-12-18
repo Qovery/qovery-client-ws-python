@@ -94,6 +94,7 @@ class NodePodInfoDto(ModelNormal):
                 and the value is attribute type.
         """
         return {
+            'images_version': ({str: (str,)},),  # noqa: E501
             'name': (str,),  # noqa: E501
             'namespace': (str,),  # noqa: E501
             'cpu_milli_limit': (int, none_type,),  # noqa: E501
@@ -111,6 +112,7 @@ class NodePodInfoDto(ModelNormal):
 
 
     attribute_map = {
+        'images_version': 'images_version',  # noqa: E501
         'name': 'name',  # noqa: E501
         'namespace': 'namespace',  # noqa: E501
         'cpu_milli_limit': 'cpu_milli_limit',  # noqa: E501
@@ -129,10 +131,11 @@ class NodePodInfoDto(ModelNormal):
 
     @classmethod
     @convert_js_args_to_python_args
-    def _from_openapi_data(cls, name, namespace, *args, **kwargs):  # noqa: E501
+    def _from_openapi_data(cls, images_version, name, namespace, *args, **kwargs):  # noqa: E501
         """NodePodInfoDto - a model defined in OpenAPI
 
         Args:
+            images_version ({str: (str,)}):
             name (str):
             namespace (str):
 
@@ -205,6 +208,7 @@ class NodePodInfoDto(ModelNormal):
         self._configuration = _configuration
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
+        self.images_version = images_version
         self.name = name
         self.namespace = namespace
         for var_name, var_value in kwargs.items():
@@ -227,10 +231,11 @@ class NodePodInfoDto(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, name, namespace, *args, **kwargs):  # noqa: E501
+    def __init__(self, images_version, name, namespace, *args, **kwargs):  # noqa: E501
         """NodePodInfoDto - a model defined in OpenAPI
 
         Args:
+            images_version ({str: (str,)}):
             name (str):
             namespace (str):
 
@@ -301,6 +306,7 @@ class NodePodInfoDto(ModelNormal):
         self._configuration = _configuration
         self._visited_composed_classes = _visited_composed_classes + (self.__class__,)
 
+        self.images_version = images_version
         self.name = name
         self.namespace = namespace
         for var_name, var_value in kwargs.items():
