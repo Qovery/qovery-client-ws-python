@@ -23,9 +23,12 @@ docs/NodeConditionDto.md
 docs/NodePodInfoDto.md
 docs/NodeResourceDto.md
 docs/NodeTaintDto.md
+docs/PodDto.md
 docs/PodStatusDto.md
 docs/ResourceStatusDto.md
 docs/ServiceInfraLogResponseDto.md
+docs/ServiceListPodsApi.md
+docs/ServiceListPodsResponseDto.md
 docs/ServiceLogResponseDto.md
 docs/ServiceMetricsApi.md
 docs/ServiceMetricsDto.md
@@ -40,6 +43,7 @@ qovery-ws/api/__init__.py
 qovery-ws/api/cluster_status_api.py
 qovery-ws/api/deployment_api.py
 qovery-ws/api/logs_api.py
+qovery-ws/api/service_list_pods_api.py
 qovery-ws/api/service_metrics_api.py
 qovery-ws/api/service_status_api.py
 qovery-ws/api_client.py
@@ -64,9 +68,11 @@ qovery-ws/model/node_condition_dto.py
 qovery-ws/model/node_pod_info_dto.py
 qovery-ws/model/node_resource_dto.py
 qovery-ws/model/node_taint_dto.py
+qovery-ws/model/pod_dto.py
 qovery-ws/model/pod_status_dto.py
 qovery-ws/model/resource_status_dto.py
 qovery-ws/model/service_infra_log_response_dto.py
+qovery-ws/model/service_list_pods_response_dto.py
 qovery-ws/model/service_log_response_dto.py
 qovery-ws/model/service_metrics_dto.py
 qovery-ws/model/service_state_dto.py
@@ -101,9 +107,12 @@ test/test_node_condition_dto.py
 test/test_node_pod_info_dto.py
 test/test_node_resource_dto.py
 test/test_node_taint_dto.py
+test/test_pod_dto.py
 test/test_pod_status_dto.py
 test/test_resource_status_dto.py
 test/test_service_infra_log_response_dto.py
+test/test_service_list_pods_api.py
+test/test_service_list_pods_response_dto.py
 test/test_service_log_response_dto.py
 test/test_service_metrics_api.py
 test/test_service_metrics_dto.py

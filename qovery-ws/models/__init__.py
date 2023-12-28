@@ -26,9 +26,11 @@ from qovery-ws.model.node_condition_dto import NodeConditionDto
 from qovery-ws.model.node_pod_info_dto import NodePodInfoDto
 from qovery-ws.model.node_resource_dto import NodeResourceDto
 from qovery-ws.model.node_taint_dto import NodeTaintDto
+from qovery-ws.model.pod_dto import PodDto
 from qovery-ws.model.pod_status_dto import PodStatusDto
 from qovery-ws.model.resource_status_dto import ResourceStatusDto
 from qovery-ws.model.service_infra_log_response_dto import ServiceInfraLogResponseDto
+from qovery-ws.model.service_list_pods_response_dto import ServiceListPodsResponseDto
 from qovery-ws.model.service_log_response_dto import ServiceLogResponseDto
 from qovery-ws.model.service_metrics_dto import ServiceMetricsDto
 from qovery-ws.model.service_state_dto import ServiceStateDto
