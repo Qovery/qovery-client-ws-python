@@ -18,9 +18,11 @@ Method | HTTP request | Description
 
 ```python
 import time
+import os
 import qovery-ws
-from qovery-ws.api import deployment_api
+from qovery-ws.rest import ApiException
 from pprint import pprint
+
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
 configuration = qovery-ws.Configuration(
@@ -29,33 +31,35 @@ configuration = qovery-ws.Configuration(
 
 
 # Enter a context with an instance of the API client
-with qovery-ws.ApiClient() as api_client:
+with qovery-ws.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = deployment_api.DeploymentApi(api_client)
-    organization = "organization_example" # str | 
-    cluster = "cluster_example" # str, none_type | 
-    project = "project_example" # str | 
-    environment = "environment_example" # str | 
-    version = "version_example" # str, none_type | 
+    api_instance = qovery-ws.DeploymentApi(api_client)
+    organization = 'organization_example' # str | 
+    cluster = 'cluster_example' # str | 
+    project = 'project_example' # str | 
+    environment = 'environment_example' # str | 
+    version = 'version_example' # str | 
 
-    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.handle_deployment_logs_request(organization, cluster, project, environment, version)
+        print("The response of DeploymentApi->handle_deployment_logs_request:\n")
         pprint(api_response)
-    except qovery-ws.ApiException as e:
+    except Exception as e:
         print("Exception when calling DeploymentApi->handle_deployment_logs_request: %s\n" % e)
 ```
 
 
+
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organization** | **str**|  |
- **cluster** | **str, none_type**|  |
- **project** | **str**|  |
- **environment** | **str**|  |
- **version** | **str, none_type**|  |
+ **organization** | **str**|  | 
+ **cluster** | **str**|  | 
+ **project** | **str**|  | 
+ **environment** | **str**|  | 
+ **version** | **str**|  | 
 
 ### Return type
 
@@ -69,7 +73,6 @@ No authorization required
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
 
 ### HTTP response details
 
@@ -89,9 +92,11 @@ No authorization required
 
 ```python
 import time
+import os
 import qovery-ws
-from qovery-ws.api import deployment_api
+from qovery-ws.rest import ApiException
 from pprint import pprint
+
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
 configuration = qovery-ws.Configuration(
@@ -100,33 +105,35 @@ configuration = qovery-ws.Configuration(
 
 
 # Enter a context with an instance of the API client
-with qovery-ws.ApiClient() as api_client:
+with qovery-ws.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = deployment_api.DeploymentApi(api_client)
-    organization = "organization_example" # str | 
-    cluster = "cluster_example" # str, none_type | 
-    project = "project_example" # str | 
-    environment = "environment_example" # str, none_type | 
-    version = "version_example" # str, none_type | 
+    api_instance = qovery-ws.DeploymentApi(api_client)
+    organization = 'organization_example' # str | 
+    cluster = 'cluster_example' # str | 
+    project = 'project_example' # str | 
+    environment = 'environment_example' # str | 
+    version = 'version_example' # str | 
 
-    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.handle_deployment_status_request(organization, cluster, project, environment, version)
+        print("The response of DeploymentApi->handle_deployment_status_request:\n")
         pprint(api_response)
-    except qovery-ws.ApiException as e:
+    except Exception as e:
         print("Exception when calling DeploymentApi->handle_deployment_status_request: %s\n" % e)
 ```
 
 
+
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organization** | **str**|  |
- **cluster** | **str, none_type**|  |
- **project** | **str**|  |
- **environment** | **str, none_type**|  |
- **version** | **str, none_type**|  |
+ **organization** | **str**|  | 
+ **cluster** | **str**|  | 
+ **project** | **str**|  | 
+ **environment** | **str**|  | 
+ **version** | **str**|  | 
 
 ### Return type
 
@@ -140,7 +147,6 @@ No authorization required
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
 
 ### HTTP response details
 
