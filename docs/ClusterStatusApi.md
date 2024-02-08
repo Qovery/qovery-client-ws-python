@@ -17,12 +17,10 @@ Method | HTTP request | Description
 
 ```python
 import time
-import os
 import qovery-ws
-from qovery-ws.models.cluster_status_dto import ClusterStatusDto
-from qovery-ws.rest import ApiException
+from qovery-ws.api import cluster_status_api
+from qovery-ws.model.cluster_status_dto import ClusterStatusDto
 from pprint import pprint
-
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
 configuration = qovery-ws.Configuration(
@@ -31,29 +29,27 @@ configuration = qovery-ws.Configuration(
 
 
 # Enter a context with an instance of the API client
-with qovery-ws.ApiClient(configuration) as api_client:
+with qovery-ws.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = qovery-ws.ClusterStatusApi(api_client)
-    organization = 'organization_example' # str | 
-    cluster = 'cluster_example' # str | 
+    api_instance = cluster_status_api.ClusterStatusApi(api_client)
+    organization = "organization_example" # str | 
+    cluster = "cluster_example" # str | 
 
+    # example passing only required values which don't have defaults set
     try:
         api_response = api_instance.handle_cluster_status_request(organization, cluster)
-        print("The response of ClusterStatusApi->handle_cluster_status_request:\n")
         pprint(api_response)
-    except Exception as e:
+    except qovery-ws.ApiException as e:
         print("Exception when calling ClusterStatusApi->handle_cluster_status_request: %s\n" % e)
 ```
 
 
-
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organization** | **str**|  | 
- **cluster** | **str**|  | 
+ **organization** | **str**|  |
+ **cluster** | **str**|  |
 
 ### Return type
 
@@ -67,6 +63,7 @@ No authorization required
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
+
 
 ### HTTP response details
 

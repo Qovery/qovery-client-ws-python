@@ -1,10 +1,3 @@
-# flake8: noqa
-
-# import apis into api package
-from qovery-ws.api.cluster_status_api import ClusterStatusApi
-from qovery-ws.api.deployment_api import DeploymentApi
-from qovery-ws.api.logs_api import LogsApi
-from qovery-ws.api.service_list_pods_api import ServiceListPodsApi
-from qovery-ws.api.service_metrics_api import ServiceMetricsApi
-from qovery-ws.api.service_status_api import ServiceStatusApi
-
+# do not import all apis into this module because that uses a lot of memory and stack frames
+# if you need the ability to import all apis from one package, import them with
+# from qovery-ws.apis import ClusterStatusApi
